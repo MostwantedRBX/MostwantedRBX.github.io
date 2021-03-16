@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/indexStyle.css">
     <title>MostwantedRBX</title>
@@ -16,22 +17,46 @@
 
     <nav>
       <div class="logo">
-        <h4>Jereb Gainer</h4>
+
+        <h4>&lt;Jereb_Gainer&gt<span id="blink">_</span></h4>
+        
+        <script>
+          var cursor = true;
+          var speed = 400;
+          setInterval(() => {
+            if(cursor) {
+              document.getElementById('blink').style.opacity = 0;
+              cursor = false;
+            } else {
+              document.getElementById('blink').style.opacity = 1;
+              cursor = true;
+            }
+          }, speed);
+      </script>
+
       </div>
+
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Projects</a></li>
+
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="about.html" class="about">About</a></li>
+        <li><a href="#" class="work">Work</a></li>
+        <li><a href="#" class="projects">Projects</a></li>
+
       </ul>
+
       <div class="burger">
+
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
-      </div>
-    </nav>  
 
+      </div>
+
+    </nav>  
+    
     <script src="JS/navbar.js"></script>
+
   </body>
 
 
